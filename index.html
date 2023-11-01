@@ -10,20 +10,27 @@
     <title>Cho's Portafolio</title>
   </head>
   <body>
-    <nav id="navbar" class="nav">
-      <ul class="nav-ul">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav id="navbar" class="nav" >
+      <div class="nav-logo">
+        <img class="nav-logo" src="./Pictures/logo.png" width="50px" height="50px" alt="Personal Logo"/>
+      </div>
+      <div class="nav-links">
+        <ul class="nav-ul">
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> 
     </nav>
     <section id="welcome-section">
-
-      <h1 id="name">Hey I am Bryan Reyes</h1>
-      <p id="desc">A Web developer</p>
+       <div class="blur">
+        <img class="profilePic" src="./Pictures/pic2.jpg" alt="Profile picture" height="200x" width="200px"/>
+        <h1 id="name">Hey I am Bryan Reyes</h1>
+        <code id="desc">&lt;A Web developer /&gt;</code>
+       </div>
     </section>
-    <section id="projects">
-      <h2 id="project-title">Theese are my projects</h2>
+    <section id="projects-section">
+      <h2 id="project-title"><span id="projects-anchor"></span>Theese are my projects</h2>
       <div class="project-grid">
         <a href="https://patsdeleon.github.io/patriciadeleon/" target="_blank" class="project-tile">
           <img class="project-tile-img" src="./Pictures/Project1.png" alt="Project-portofolio"><p class="project-tile-p">#1 Artist Portafolio</p></a>

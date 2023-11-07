@@ -26,6 +26,10 @@
        <div class="blur">
         <img class="profilePic" src="./Pictures/pic2.jpg" alt="Profile picture" height="200x" width="200px"/>
         <h1 id="name">Hey I am Bryan Reyes</h1>
+        <p>
+          <span>$</span>
+          <span id="typing-effect"></span>
+        </p>
         <code id="desc">&lt;A Web developer /&gt;</code>
        </div>
     </section>
@@ -63,8 +67,20 @@
 
     </section>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="module">
+      let strings = ["npm install --global <b>@manekinekko/hexa</b>", "hexa <b>init</b>", "hexa <b>deploy</b>", "hexa <b>init --login</b>", "hexa <b>init --manual</b>", "hexa <b>init --yolo</b>"];
+      window.onload = async function () {
+        new Typed("#typing-effect", {
+          strings,
+          typeSpeed: 50,
+          smartBackspace: false,
+          backSpeed: 10,
+          loop: true,
+          backDelay: 1700,
+        });
+      };
+    </script>
     
   </body>
 </html>
